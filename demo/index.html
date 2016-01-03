@@ -15,6 +15,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <title>seed-element Demo</title>
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="import" href="../headered-panel.html">
+      <style is="custom-style">
+          headered-panel#colored {
+              --header-background-color: #dd4b39;
+              --header-color: #fff;
+              --header-font: 15px arial, sans-serif;
+          }
+      </style>
   </head>
   <body>
 
@@ -23,6 +30,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     
 
     <headered-panel title="Some Title">
+      <h2 class="content">Hello seed-element</h2>
+    </headered-panel>
+      
+      <headered-panel title="Some Title" id="colored">
       <h2 class="content">Hello seed-element</h2>
     </headered-panel>
 
